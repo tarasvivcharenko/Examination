@@ -1,0 +1,516 @@
+@import 'mixin';
+.headerTravel{
+  height: 820px;
+  .hero{
+    height: 740px;
+    background: url("../img/hero_section.png") center center no-repeat;
+    background-size: cover;
+    .containerHero{
+      height: 740px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      .titleHeroH{
+        color: #ffffff;
+        font-family: "Josefin Sans";
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 26px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+      }
+      .descriptionHeroH{
+        padding: 15px 0 50px 0;
+        color: #ffffff;
+        font-family: "Josefin Sans";
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 26px;
+        letter-spacing: 5px;
+      }
+      .inputForm{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .formHero{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          height: 60px;
+          background-color: #ffffff;
+          .formInputHero{
+            width: 100%;
+            height: 60px;
+            border: none;
+            text-align: center;
+            color: #999999;
+            font-family: "Josefin Sans";
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 2.8px;
+            &::placeholder{
+              text-align: center;
+              color: #999999;
+              font-family: "Josefin Sans";
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 26px;
+              letter-spacing: 2.8px;
+            }
+            &:active, &:focus {
+              text-align: center;
+              color: #999999;
+              font-family: "Josefin Sans";
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 26px;
+              letter-spacing: 2.8px;
+              border: 2px solid #5474fd;
+            }
+          }
+          .formButtonHero{
+            width: 25%;
+            height: 56px;
+            padding-left: 0;
+            background-color: #5474fd;
+            border: 2px solid #ffffff;
+            color: #ffffff;
+            font-family: 'Aleo';
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 26px;
+            text-transform: uppercase;
+            letter-spacing: 1.4px;
+
+          }
+        }
+      }
+      .textScrollDownHero{
+        padding: 120px 0 15px 0;
+        .textLinkScrollDownHero{
+          text-decoration: none;
+          color: #ffffff;
+          font-family: "Josefin Sans";
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 26px;
+          letter-spacing: 2px;
+        }
+      }
+      .iconScrollDownHero{
+        .iconLinkScrollDownHero{
+          text-decoration: none;
+          align-items: center;
+        }
+      }
+    }
+  }
+  .navigation{
+    background-color: #5474fd;
+    height: 80px;
+    .containerNavigation{
+      .logoNavigation{
+        @include mobile{
+          display: none;
+        }
+        .linkLogoNavigation{
+          text-decoration: none;
+          color: #ffffff;
+          font-family: "Josefin Sans";
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 80px;
+          text-transform: uppercase;
+          letter-spacing: 2.4px;
+        }
+      }
+      .menuNavigation{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        @include mobile{
+          display: none;
+        }
+        .elementMenuNavigation{
+          .linkElementMenu{
+          text-decoration: none;
+          color: #ffffff;
+          font-family: 'Aleo';
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 80px;
+          text-transform: uppercase;
+          }
+        }
+      }
+      .top_nav {
+        display: none;
+        @include mobile{
+          width: 100%;
+          height: 70px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .overlay {
+          height: 0;
+          width: 100%;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: rgb(0, 0, 0);
+          background-color: rgba(0, 0, 0, 0.9);
+          overflow-x: hidden;
+          transition: 0.5s;
+          .close_button {
+            position: absolute;
+            text-decoration: none;
+            color: #ffffff;
+            top: 20px;
+            right: 45px;
+            font-size: 30px;
+          }
+          .overlay-content {
+            position: relative;
+            top: 25%;
+            width: 100%;
+            text-align: center;
+            a {
+              padding: 8px;
+              text-decoration: none;
+              font-family: 'Raleway';
+              font-size: 36px;
+              color: #ffffff;
+              display: block;
+              transition: 0.3s;
+              &:hover, &:focus{
+                color: #555555;
+              }
+            }
+          }
+        }
+        .logo_mobile{
+          .linkLogoNavigation{
+            text-decoration: none;
+            color: #ffffff;
+            font-family: "Josefin Sans";
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 80px;
+            text-transform: uppercase;
+            letter-spacing: 2.4px;
+          }
+        }
+        .button_menu{
+          padding-right: 10px;
+          .fas{
+            font-size: 25px;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+
+}
+.mainTravel{
+  .whyChooseUs{
+    background: url("../img/whychooseus_section.png") center center no-repeat;
+    background-size: cover;
+    height: 685px;
+    .containerWhyChooseUs{
+      padding-top: 120px;
+      .leftBlockWhyChooseUs{
+        padding-top: 50px;
+        .titleWhyChooseUs{
+          color: #ffffff;
+          font-family: 'Aleo';
+          font-size: 36px;
+          font-weight: 400;
+          line-height: 26px;
+          padding-bottom: 50px;
+        }
+        .descriptionWhyChooseUs{
+          color: #e8e8e8;
+          font-family: "Josefin Sans";
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 26px;
+          letter-spacing: 1.6px;
+          .textDescription{
+            padding-bottom: 40px;
+          }
+        }
+        .buttonWhyChooseUs{
+          width: 225px;
+          height: 60px;
+          background: url("../img/button-background.png") center center no-repeat;
+          background-size: cover;
+          text-align: center;
+          .linkButtonWhyChooseUs{
+            text-decoration: none;
+            color: #ffffff;
+            font-family: 'Aleo';
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 60px;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+          }
+        }
+      }
+      .galleryWhyChooseUs{
+        padding: 0;
+        .imageGalleryWhyChooseUsFirst{
+          padding: 0 0 5px 0;
+        }
+        .imageGalleryWhyChooseUsSecond{
+          padding: 5px 0 0 0;
+        }
+      }
+    }
+  }
+  .whatWeDo{
+    height: 337px;
+    background-color: #333333;
+    .containerWhatWeDo{
+      .allBlock{
+        height: 337px;
+        .backgroundIcon{
+          height: 100px;
+          width: 100px;
+          background-color: #333333;
+          border-radius: 50%;
+          .iconWhatWeDo{
+            fill: #5474fd;;
+            &:hover{
+              fill: #ff6363;
+            }
+          }
+        }
+        .textWhatWeDo{
+          padding-top: 15px;
+          color: #e8e8e8;
+          font-family: 'Aleo';
+          font-size: 36px;
+          font-weight: 400;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+  .informationBlockOne{
+    height: 700px;
+    background: url("../img/spain_1_section.png");
+    .containerInformationBlockOne{
+      padding-top: 250px;
+      .blockInformationOne{
+        background-color: #232323;
+        opacity: 0.9;
+        height: 371px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 30px;
+        .titleBlockInformationOne{
+          padding-top: 50px;
+          color: #e8e8e8;
+          font-family: "Josefin Sans";
+          font-size: 20px;
+          font-weight: 300;
+          line-height: 26px;
+        }
+        .titleTwoBlockInformationOne{
+          color: #ffffff;
+          font-family: "Josefin Sans";
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 26px;
+          text-transform: uppercase;
+        }
+        .descriptionBlockInformationOne{
+          color: #e8e8e8;
+          font-family: "Josefin Sans";
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 26px;
+        }
+        .buttonBlockInformationOne{
+          width: 225px;
+          height: 60px;
+          background: url("../img/button-background.png") center center no-repeat;
+          background-size: cover;
+          text-align: center;
+          margin-bottom: 50px;
+          .link{
+            text-decoration: none;
+            color: #ffffff;
+            font-family: 'Aleo';
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 60px;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+  .informationBlockTwo{
+    height: 700px;
+    background: url("../img/spain_2_section.png");
+    .containerInformationBlockTwo{
+      padding-top: 250px;
+      .blockInformationTwo{
+        background-color: #232323;
+        opacity: 0.9;
+        height: 371px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 30px;
+        .titleBlockInformationTwo{
+          padding-top: 50px;
+          color: #e8e8e8;
+          font-family: "Josefin Sans";
+          font-size: 20px;
+          font-weight: 300;
+          line-height: 26px;
+        }
+        .titleTwoBlockInformationTwo{
+          color: #ffffff;
+          font-family: "Josefin Sans";
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 26px;
+          text-transform: uppercase;
+        }
+        .descriptionBlockInformationTwo{
+          color: #e8e8e8;
+          font-family: "Josefin Sans";
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 26px;
+        }
+        .buttonBlockInformationTwo{
+          width: 225px;
+          height: 60px;
+          background: url("../img/button-background.png") center center no-repeat;
+          background-size: cover;
+          text-align: center;
+          margin-bottom: 50px;
+          .link{
+            text-decoration: none;
+            color: #ffffff;
+            font-family: 'Aleo';
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 60px;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+  .whatOurTouristSay{
+    height: 731px;
+    background: url("../img/whatourtouristsay_section.png") center center no-repeat;
+    background-size: cover;
+    .containerWhatOurTouristSay{
+      height: 731px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .titleWhatOurTouristSay{
+        color: #ffffff;
+        font-family: 'Aleo';
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 26px;
+        padding-bottom: 95px;
+      }
+      .commentWhatOurTouristSay{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .textCommentWhatOurTouristSay{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding-left: 60px;
+          padding-right: 60px;
+          background-color: #333333;
+          .nameUser{
+            color: #fefefe;
+            font-family: "Josefin Sans";
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 26px;
+            text-transform: uppercase;
+            padding-bottom: 30px;
+          }
+          .comment{
+            color: #e8e8e8;
+            font-family: "Josefin Sans";
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 26px;
+            text-align: justify;
+            .fas{
+              color: #5474fd;
+              font-size: 26px;
+              vertical-align: super;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.footerTravel{
+  background-color: #232323;
+  .containerContactUs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .titleContactUs{
+      color: #ffffff;
+      font-family: "Josefin Sans";
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 26px;
+      text-transform: uppercase;
+      letter-spacing: 3.36px;
+      padding-top: 120px;
+    }
+    .descriptionContactUs{
+      color: #ffffff;
+      font-family: "Josefin Sans";
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 26px;
+      letter-spacing: 1.6px;
+    }
+    .socialLinkContactUs{
+      padding: 30px 0 50px 0;
+      width: 165px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .socialLink{
+        color: #ffffff;
+        font-size: 20px;
+        &:hover{
+          color: #5474fd;
+        }
+      }
+    }
+  }
+}
