@@ -1,292 +1,398 @@
 @import 'mixin';
-.headerTravel{
-  height: 820px;
-  .hero{
-    height: 740px;
-    background: url("../img/hero_section.png") center center no-repeat;
-    background-size: cover;
-    .containerHero{
-      height: 740px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      .titleHeroH{
-        color: #ffffff;
-        font-family: "Josefin Sans";
-        font-size: 48px;
-        font-weight: 700;
-        line-height: 26px;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-      }
-      .descriptionHeroH{
-        padding: 15px 0 50px 0;
-        color: #ffffff;
-        font-family: "Josefin Sans";
-        font-size: 22px;
-        font-weight: 300;
-        line-height: 26px;
-        letter-spacing: 5px;
-      }
+.hero{
+  background: url("../img/hero_section.png") center center no-repeat;
+  background-size: cover;
+  .containerHero{
+    .titleHero{
+      padding: 250px 0 15px 0;
+      color: #ffffff;
+      font-family: "Josefin Sans";
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 26px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+    }
+    .descriptionHero{
+      padding: 15px 0 50px 0;
+      color: #ffffff;
+      font-family: "Josefin Sans";
+      font-size: 22px;
+      font-weight: 300;
+      line-height: 26px;
+      letter-spacing: 5px;
+    }
       .inputForm{
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        .formHero{
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        background-color: #ffffff;
+        .formInputHero{
           width: 100%;
           height: 60px;
-          background-color: #ffffff;
-          .formInputHero{
-            width: 100%;
-            height: 60px;
-            border: none;
+          border: none;
+          text-align: center;
+          color: #999999;
+          font-family: "Josefin Sans";
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 60px;
+          letter-spacing: 2.8px;
+          &::placeholder{
+            color: #999999;
             text-align: center;
+            font-family: "Josefin Sans";
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 60px;
+            letter-spacing: 2.8px;
+            @include mob_xs{
+              font-size: 10px;
+            }
+          }
+          &:active, &:focus {
             color: #999999;
             font-family: "Josefin Sans";
             font-size: 14px;
             font-weight: 400;
             line-height: 26px;
             letter-spacing: 2.8px;
-            &::placeholder{
-              text-align: center;
-              color: #999999;
-              font-family: "Josefin Sans";
-              font-size: 14px;
-              font-weight: 400;
-              line-height: 26px;
-              letter-spacing: 2.8px;
-            }
-            &:active, &:focus {
-              text-align: center;
-              color: #999999;
-              font-family: "Josefin Sans";
-              font-size: 14px;
-              font-weight: 400;
-              line-height: 26px;
-              letter-spacing: 2.8px;
-              border: 2px solid #5474fd;
-            }
-          }
-          .formButtonHero{
-            width: 25%;
-            height: 56px;
-            padding-left: 0;
-            background-color: #5474fd;
-            border: 2px solid #ffffff;
-            color: #ffffff;
-            font-family: 'Aleo';
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 26px;
-            text-transform: uppercase;
-            letter-spacing: 1.4px;
-
+            border: 2px solid #5474fd;
           }
         }
-      }
-      .textScrollDownHero{
-        padding: 120px 0 15px 0;
-        .textLinkScrollDownHero{
-          text-decoration: none;
+        .formButtonHero{
+          width: 25%;
+          height: 56px;
+          background-color: #5474fd;
+          border: 2px solid #ffffff;
           color: #ffffff;
-          font-family: "Josefin Sans";
+          font-family: 'Aleo';
           font-size: 14px;
           font-weight: 400;
-          line-height: 26px;
-          letter-spacing: 2px;
+          line-height: 52px;
+          text-transform: uppercase;
+          letter-spacing: 1.4px;
+          span{
+            padding-right: 5px;
+            @include mobile_horizon{
+              padding-right: 0;
+            }
+            @include mobile{
+              padding-right: 0;
+            }
+          }
+          .search{
+            @include mobile_horizon{
+              display: none;
+            }
+            @include mobile{
+              display: none;
+            }
+          }
         }
       }
-      .iconScrollDownHero{
-        .iconLinkScrollDownHero{
-          text-decoration: none;
-          align-items: center;
-        }
+    .textScrollDownHero{
+      padding: 120px 0 0 0;
+      .textLinkScrollDownHero{
+        text-decoration: none;
+        color: #ffffff;
+        font-family: "Josefin Sans";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 2px;
+      }
+    }
+    .iconScrollDownHero{
+      padding-bottom: 135px;
+      .iconLinkScrollDownHero{
+        text-decoration: none;
+        padding-bottom: 135px;
       }
     }
   }
+}
+.headerTravel{
+  position: sticky;
+  top: 0;
+  z-index: 5;
   .navigation{
     background-color: #5474fd;
-    height: 80px;
-    .containerNavigation{
-      .logoNavigation{
-        @include mobile{
-          display: none;
+    .logoNavigation{
+      padding: 25px 0 25px 0;
+      @include mobile{
+        display: none;
+      }
+      @include mobile_horizon{
+        display: none;
+      }
+      .linkLogoNavigation{
+        text-decoration: none;
+        color: #ffffff;
+        font-family: "Josefin Sans";
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        text-transform: uppercase;
+        letter-spacing: 2.4px;
+      }
+    }
+    .menuNavigation{
+      padding: 25px 0 25px 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      @include mobile{
+        display: none;
+      }
+      @include mobile_horizon{
+        display: none;
+      }
+      .elementMenuNavigation{
+        .linkElementMenu{
+        text-decoration: none;
+        color: #ffffff;
+        font-family: 'Aleo';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        text-transform: uppercase;
         }
+      }
+    }
+    .top_nav {
+      display: none;
+      @include mobile{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      @include mobile_horizon{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .overlay {
+        height: 0;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+        .close_button {
+          position: absolute;
+          text-decoration: none;
+          color: #5474fd;
+          top: 20px;
+          right: 45px;
+          font-size: 30px;
+        }
+        .overlay-content {
+          position: relative;
+          top: 15%;
+          width: 100%;
+          text-align: center;
+          a {
+            padding: 8px;
+            text-decoration: none;
+            font-family: 'Raleway';
+            font-size: 36px;
+            color: #5474fd;
+            display: block;
+            transition: 0.3s;
+            &:hover, &:focus{
+              color: #555555;
+            }
+          }
+        }
+      }
+      .logo_mobile{
+        padding: 20px 0 20px 0;
         .linkLogoNavigation{
           text-decoration: none;
           color: #ffffff;
           font-family: "Josefin Sans";
           font-size: 24px;
           font-weight: 700;
-          line-height: 80px;
+          line-height: 30px;
           text-transform: uppercase;
           letter-spacing: 2.4px;
         }
       }
-      .menuNavigation{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        @include mobile{
-          display: none;
-        }
-        .elementMenuNavigation{
-          .linkElementMenu{
-          text-decoration: none;
+      .button_menu{
+        .fas{
+          font-size: 25px;
           color: #ffffff;
-          font-family: 'Aleo';
-          font-size: 14px;
-          font-weight: 400;
-          line-height: 80px;
-          text-transform: uppercase;
-          }
-        }
-      }
-      .top_nav {
-        display: none;
-        @include mobile{
-          width: 100%;
-          height: 70px;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
-        }
-        .overlay {
-          height: 0;
-          width: 100%;
-          position: fixed;
-          z-index: 1;
-          top: 0;
-          left: 0;
-          background-color: rgb(0, 0, 0);
-          background-color: rgba(0, 0, 0, 0.9);
-          overflow-x: hidden;
-          transition: 0.5s;
-          .close_button {
-            position: absolute;
-            text-decoration: none;
-            color: #ffffff;
-            top: 20px;
-            right: 45px;
-            font-size: 30px;
-          }
-          .overlay-content {
-            position: relative;
-            top: 25%;
-            width: 100%;
-            text-align: center;
-            a {
-              padding: 8px;
-              text-decoration: none;
-              font-family: 'Raleway';
-              font-size: 36px;
-              color: #ffffff;
-              display: block;
-              transition: 0.3s;
-              &:hover, &:focus{
-                color: #555555;
-              }
-            }
-          }
-        }
-        .logo_mobile{
-          .linkLogoNavigation{
-            text-decoration: none;
-            color: #ffffff;
-            font-family: "Josefin Sans";
-            font-size: 24px;
-            font-weight: 700;
-            line-height: 80px;
-            text-transform: uppercase;
-            letter-spacing: 2.4px;
-          }
-        }
-        .button_menu{
-          padding-right: 10px;
-          .fas{
-            font-size: 25px;
-            color: #ffffff;
-          }
         }
       }
     }
   }
-
 }
 .mainTravel{
-  .whyChooseUs{
+  .whyChooseUs {
     background: url("../img/whychooseus_section.png") center center no-repeat;
     background-size: cover;
-    height: 685px;
-    .containerWhyChooseUs{
-      padding-top: 120px;
-      .leftBlockWhyChooseUs{
-        padding-top: 50px;
-        .titleWhyChooseUs{
+    .container {
+      .textWhyChooseUs{
+        padding: 200px 15px 130px 0;
+        @include mobile{
+          padding: 100px 0 65px 0;
+          text-align: center;
+        }
+        @include mobile_horizon{
+          padding: 100px 0 65px 0;
+          text-align: center;
+        }
+        .titleWhyChooseUs {
           color: #ffffff;
           font-family: 'Aleo';
           font-size: 36px;
           font-weight: 400;
           line-height: 26px;
-          padding-bottom: 50px;
+          padding: 0 0 60px 0;
         }
-        .descriptionWhyChooseUs{
+
+        .descriptionWhyChooseUs {
           color: #e8e8e8;
           font-family: "Josefin Sans";
           font-size: 16px;
           font-weight: 300;
           line-height: 26px;
           letter-spacing: 1.6px;
-          .textDescription{
-            padding-bottom: 40px;
+          padding-bottom: 20px;
+
+          .textDescription {
+            padding-bottom: 30px;
           }
         }
-        .buttonWhyChooseUs{
-          width: 225px;
-          height: 60px;
-          background: url("../img/button-background.png") center center no-repeat;
-          background-size: cover;
-          text-align: center;
-          .linkButtonWhyChooseUs{
-            text-decoration: none;
-            color: #ffffff;
-            font-family: 'Aleo';
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 60px;
-            text-transform: uppercase;
-            letter-spacing: 1.2px;
+        .positionButtonWhyChooseUs{
+          @include mobile{
+             display: flex;
+             justify-content: center;
+           }
+          @include mobile_horizon{
+            display: flex;
+            justify-content: center;
+          }
+          .buttonWhyChooseUs {
+            width: 225px;
+            height: 60px;
+            background: url("../img/button-background.png") center center no-repeat;
+            background-size: cover;
+            text-align: center;
+            @include mobile_xs{
+              height: 45px;
+            }
+
+            .linkButtonWhyChooseUs {
+              text-decoration: none;
+              color: #ffffff;
+              font-family: 'Aleo';
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 60px;
+              text-transform: uppercase;
+              letter-spacing: 1.2px;
+              @include mobile_xs{
+                font-size: 11px;
+                line-height: 45px;
+              }
+            }
           }
         }
       }
-      .galleryWhyChooseUs{
-        padding: 0;
-        .imageGalleryWhyChooseUsFirst{
-          padding: 0 0 5px 0;
+      .galleryWhyChooseUs {
+        padding: 120px 0 120px 0;
+        @include mobile{
+          padding: 60px 0 60px 0;
         }
-        .imageGalleryWhyChooseUsSecond{
-          padding: 5px 0 0 0;
+        @include mobile_horizon{
+          padding: 60px 0 60px 0;
+        }
+        .imageGalleryWhyChooseUsFirst {
+          background: url("../img/whychooseus_img_1.png") center center no-repeat;
+          background-size: cover;
+          padding: 110px 0 110px 0;
+        }
+
+        .imageGalleryWhyChooseUsSecond {
+          background: url("../img/whychooseus_img_2.png") center center no-repeat;
+          background-size: cover;
+          padding: 110px 0 110px 0;
+          margin-top: 10px;
         }
       }
     }
   }
   .whatWeDo{
-    height: 337px;
     background-color: #333333;
+    @include mobile_horizon{
+      padding: 15px 0 40px 0;
+    }
+    @include mobile{
+      padding: 15px 0 40px 0;
+    }
     .containerWhatWeDo{
       .allBlock{
-        height: 337px;
+        height: 335px;
+        position: relative;
+        @include tablet{
+          height: 275px;
+        }
+        @include mobile_horizon{
+          height: auto;
+        }
+        @include mobile{
+          height: auto;
+        }
+        .border_dugi_1{
+          width: 30%;
+          height: 50%;
+          position: absolute;
+          left: 18%;
+          top: 60px;
+          border-top: 2px dotted #ffffff;
+          border-radius: 50%;
+          opacity: 0.5;
+          z-index: 0;
+          @include mobile_horizon{
+            display: none;
+          }
+          @include mobile{
+            display: none;
+          }
+        }
+        .border_dugi_2{
+          width: 30%;
+          height: 50%;
+          position: absolute;
+          right: 18%;
+          top: 60px;
+          border-top: 2px dotted #ffffff;
+          border-radius: 50%;
+          opacity: 0.5;
+          z-index: 0;
+          @include mobile_horizon{
+            display: none;
+          }
+          @include mobile{
+            display: none;
+          }
+        }
         .backgroundIcon{
           height: 100px;
           width: 100px;
           background-color: #333333;
           border-radius: 50%;
+          z-index: 1;
           .iconWhatWeDo{
             fill: #5474fd;;
             &:hover{
@@ -301,25 +407,37 @@
           font-size: 36px;
           font-weight: 400;
           line-height: 26px;
+          z-index: 1;
+          @include tablet{
+             font-size: 30px;
+           }
+          @include mobile_horizon{
+            font-size: 30px;
+          }
+          @include mobile{
+            font-size: 30px;
+          }
         }
       }
     }
   }
   .informationBlockOne{
-    height: 700px;
-    background: url("../img/spain_1_section.png");
+    background: url("../img/spain_1_section.png") center center no-repeat;
+    background-size: cover;
     .containerInformationBlockOne{
-      padding-top: 250px;
+      padding: 230px 0 100px 0;
       .blockInformationOne{
         background-color: #232323;
         opacity: 0.9;
-        height: 371px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        padding-left: 30px;
+        padding: 0 30px 0 30px;
+        @include mobile{
+          text-align: center;
+        }
+        @include mobile_horizon{
+          text-align: center;
+        }
         .titleBlockInformationOne{
-          padding-top: 50px;
+          padding: 50px 0 30px 0;
           color: #e8e8e8;
           font-family: "Josefin Sans";
           font-size: 20px;
@@ -340,49 +458,70 @@
           font-size: 16px;
           font-weight: 400;
           line-height: 26px;
+          padding: 30px 0 50px 0;
         }
-        .buttonBlockInformationOne{
-          width: 225px;
-          height: 60px;
-          background: url("../img/button-background.png") center center no-repeat;
-          background-size: cover;
-          text-align: center;
-          margin-bottom: 50px;
-          .link{
-            text-decoration: none;
-            color: #ffffff;
-            font-family: 'Aleo';
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 60px;
-            text-transform: uppercase;
+        .positionButtonBlockInformationOne{
+          @include mobile{
+            display: flex;
+            justify-content: center;
+          }
+          @include mobile_horizon{
+            display: flex;
+            justify-content: center;
+          }
+          .buttonBlockInformationOne{
+            width: 225px;
+            height: 60px;
+            background: url("../img/button-background.png") center center no-repeat;
+            background-size: cover;
+            text-align: center;
+            margin-bottom: 50px;
+            @include mobile_xs{
+              height: 45px;
+            }
+            .link{
+              text-decoration: none;
+              color: #ffffff;
+              font-family: 'Aleo';
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 60px;
+              text-transform: uppercase;
+              @include mobile_xs {
+                font-size: 11px;
+                line-height: 45px;
+              }
+            }
           }
         }
       }
     }
   }
   .informationBlockTwo{
-    height: 700px;
-    background: url("../img/spain_2_section.png");
+    background: url("../img/spain_2_section.png") center center no-repeat;
+    background-size: cover;
     .containerInformationBlockTwo{
-      padding-top: 250px;
-      .blockInformationTwo{
+      padding: 230px 0 100px 0;
+      .blockInformationTwo {
         background-color: #232323;
         opacity: 0.9;
-        height: 371px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        padding-left: 30px;
-        .titleBlockInformationTwo{
-          padding-top: 50px;
+        padding: 0 30px 0 30px;
+        @include mobile{
+          text-align: center;
+        }
+        @include mobile_horizon{
+          text-align: center;
+        }
+        .titleBlockInformationTwo {
+          padding: 50px 0 30px 0;
           color: #e8e8e8;
           font-family: "Josefin Sans";
           font-size: 20px;
           font-weight: 300;
           line-height: 26px;
         }
-        .titleTwoBlockInformationTwo{
+
+        .titleTwoBlockInformationTwo {
           color: #ffffff;
           font-family: "Josefin Sans";
           font-size: 20px;
@@ -390,59 +529,84 @@
           line-height: 26px;
           text-transform: uppercase;
         }
-        .descriptionBlockInformationTwo{
+
+        .descriptionBlockInformationTwo {
           color: #e8e8e8;
           font-family: "Josefin Sans";
           font-size: 16px;
           font-weight: 400;
           line-height: 26px;
+          padding: 30px 0 50px 0;
         }
-        .buttonBlockInformationTwo{
-          width: 225px;
-          height: 60px;
-          background: url("../img/button-background.png") center center no-repeat;
-          background-size: cover;
-          text-align: center;
-          margin-bottom: 50px;
-          .link{
-            text-decoration: none;
-            color: #ffffff;
-            font-family: 'Aleo';
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 60px;
-            text-transform: uppercase;
+
+        .positionButtonBlockInformationTwo {
+          @include mobile {
+            display: flex;
+            justify-content: center;
+          }
+          @include mobile_horizon {
+            display: flex;
+            justify-content: center;
+          }
+
+          .buttonBlockInformationTwo {
+            width: 225px;
+            height: 60px;
+            background: url("../img/button-background.png") center center no-repeat;
+            background-size: cover;
+            text-align: center;
+            margin-bottom: 50px;
+            @include mobile_xs {
+              height: 45px;
+            }
+
+            .link {
+              text-decoration: none;
+              color: #ffffff;
+              font-family: 'Aleo';
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 60px;
+              text-transform: uppercase;
+              @include mobile_xs {
+                font-size: 11px;
+                line-height: 45px;
+              }
+            }
           }
         }
       }
     }
   }
   .whatOurTouristSay{
-    height: 731px;
     background: url("../img/whatourtouristsay_section.png") center center no-repeat;
     background-size: cover;
     .containerWhatOurTouristSay{
-      height: 731px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      padding-top: 60px;
+      padding-bottom: 200px;
+      @include mobile_horizon{
+        padding-top: 0;
+        padding-bottom: 100px;
+      }
+      @include mobile{
+        padding-top: 0;
+        padding-bottom: 100px;
+      }
       .titleWhatOurTouristSay{
         color: #ffffff;
         font-family: 'Aleo';
         font-size: 36px;
         font-weight: 400;
         line-height: 26px;
-        padding-bottom: 95px;
+        padding: 60px 0 95px 0;
       }
       .commentWhatOurTouristSay{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        .imageWhatOurTouristSay{
+          background: url("../img/sam_sumon.png") center center no-repeat;
+          background-size: cover;
+          padding: 142px 0 142px 0;
+        }
         .textCommentWhatOurTouristSay{
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
           padding-left: 60px;
           padding-right: 60px;
           background-color: #333333;
@@ -453,7 +617,7 @@
             font-weight: 400;
             line-height: 26px;
             text-transform: uppercase;
-            padding-bottom: 30px;
+            padding: 50px 0 30px 0;
           }
           .comment{
             color: #e8e8e8;
@@ -462,9 +626,10 @@
             font-weight: 300;
             line-height: 26px;
             text-align: justify;
+            padding-bottom: 50px;
             .fas{
               color: #5474fd;
-              font-size: 26px;
+              font-size: 20px;
               vertical-align: super;
             }
           }
@@ -476,10 +641,16 @@
 .footerTravel{
   background-color: #232323;
   .containerContactUs{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 25px;
+    @include mobile_horizon{
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    @include mobile{
+      padding-top: 0;
+      padding-bottom: 0;
+    }
     .titleContactUs{
       color: #ffffff;
       font-family: "Josefin Sans";
@@ -488,7 +659,7 @@
       line-height: 26px;
       text-transform: uppercase;
       letter-spacing: 3.36px;
-      padding-top: 120px;
+      padding: 60px 0 15px 0;
     }
     .descriptionContactUs{
       color: #ffffff;
@@ -499,11 +670,10 @@
       letter-spacing: 1.6px;
     }
     .socialLinkContactUs{
-      padding: 30px 0 50px 0;
-      width: 165px;
+      padding: 30px 0 25px 0;
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-around;
       .socialLink{
         color: #ffffff;
         font-size: 20px;

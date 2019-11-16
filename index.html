@@ -8,72 +8,79 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Aleo:300,400,700|Josefin+Sans:100,300,400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-<header class="headerTravel">
-    <section class="hero" id="heroSection">
-        <div class="container containerHero">
-            <div class="row titleHero">
-                <h1 class="col-lg-12 col-sm-12 col-12 titleHeroH">BHROMAON</h1>
-            </div>
-            <div class="row descriptionHero">
-                <h3 class="col-lg-12 col-sm-12 col-12 descriptionHeroH">Safe Travel Anywhere</h3>
-            </div>
-            <div class="row inputForm">
-                <div class="col-lg-7 col-sm-10 col-10">
-                    <form class="formHero" action="#" method="get">
-                        <input class="formInputHero" type="text" name="search" id="search" placeholder="Search Your Travel Destination">
-                        <button type="submit" class="formButtonHero">SEARCH
-                                <?xml version="1.0" encoding="utf-8"?>
-                                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-                                "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                     xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20"
-                                     viewBox="0 0 32 32">
-                                    <g id="icomoon-ignore">
-                                    </g>
-                                    <path d="M28.591 27.273l-7.263-7.264c1.46-1.756 2.339-4.010 2.339-6.471 0-5.595-4.535-10.129-10.129-10.129-5.594 0-10.129 4.535-10.129 10.129 0 5.594 4.536 10.129 10.129 10.129 2.462 0 4.716-0.879 6.471-2.339l7.263 7.264 1.319-1.319zM4.475 13.538c0-4.997 4.065-9.063 9.063-9.063 4.997 0 9.063 4.066 9.063 9.063s-4.066 9.063-9.063 9.063c-4.998 0-9.063-4.066-9.063-9.063z"
-                                          fill="#ffffff"></path>
-                                </svg>
-                        </button>
-                    </form>
-                </div>
-            </div>
-            <div class="scrollDownHero">
-                <div class="textScrollDownHero"><a class="textLinkScrollDownHero" href="#WhatOurTouristSay">Scroll Down</a>
-                </div>
-                <div class="iconScrollDownHero"><a class="iconLinkScrollDownHero" href="#WhatOurTouristSay">
-                    <?xml version="1.0" encoding="utf-8"?>
-                    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                         width="17" height="17" viewBox="0 0 17 17">
-                        <g>
-                        </g>
-                        <path d="M16.354 5.075l-7.855 7.854-7.853-7.854 0.707-0.707 7.145 7.146 7.148-7.147 0.708 0.708z"
-                              fill="#ffffff"/>
-                    </svg>
-                </a></div>
+<section class="hero" id="heroSection">
+    <div class="container containerHero">
+        <div class="row text-center">
+            <div class="col-lg-12 col-sm-12 col-12">
+                <h1 class="titleHero">BHROMAON</h1>
             </div>
         </div>
-    </section>
+        <div class="row text-center">
+            <div class="col-lg-12 col-sm-12 col-12">
+                <h3 class="descriptionHero">Safe Travel Anywhere</h3>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10 col-sm-10 col-10 text-center">
+                <form class="inputForm" action="#" method="get" id="form">
+                    <input class="formInputHero" autocomplete="off" type="text" name="search" id="search" placeholder="Search Your Travel Destination">
+                    <button class="formButtonHero" type="submit" form="form"><span>SEARCH</span>
+                            <?xml version="1.0" encoding="utf-8"?>
+                            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+                            "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                            <svg class="search" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20"
+                                 viewBox="0 0 32 32">
+                                <g id="icomoon-ignore">
+                                </g>
+                                <path d="M28.591 27.273l-7.263-7.264c1.46-1.756 2.339-4.010 2.339-6.471 0-5.595-4.535-10.129-10.129-10.129-5.594 0-10.129 4.535-10.129 10.129 0 5.594 4.536 10.129 10.129 10.129 2.462 0 4.716-0.879 6.471-2.339l7.263 7.264 1.319-1.319zM4.475 13.538c0-4.997 4.065-9.063 9.063-9.063 4.997 0 9.063 4.066 9.063 9.063s-4.066 9.063-9.063 9.063c-4.998 0-9.063-4.066-9.063-9.063z"
+                                      fill="#ffffff"></path>
+                            </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="row text-center">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="textScrollDownHero"><a class="textLinkScrollDownHero" href="#WhatOurTouristSay">Scroll Down</a></div>
+            <div class="iconScrollDownHero"><a class="iconLinkScrollDownHero" href="#WhatOurTouristSay">
+                <?xml version="1.0" encoding="utf-8"?>
+                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                     width="17" height="17" viewBox="0 0 17 17">
+                    <g>
+                    </g>
+                    <path d="M16.354 5.075l-7.855 7.854-7.853-7.854 0.707-0.707 7.145 7.146 7.148-7.147 0.708 0.708z"
+                          fill="#ffffff"/>
+                </svg>
+            </a>
+            </div>
+        </div>
+        </div>
+</div>
+</section>
+<header class="headerTravel">
     <section class="navigation">
-        <div class="container containerNavigation">
-            <div class="row">
-                <div class="col-lg-2 logoNavigation"><a class="linkLogoNavigation" href="#heroSection">BHROMAON</a></div>
-                <nav class="offset-lg-4 col-lg-6 menuNavigation">
-                    <div class="elementMenuNavigation"><a class="linkElementMenu" href="#WhyChooseUs">Who We Are</a>
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-2 col-md-2">
+                    <div class="logoNavigation"><a class="linkLogoNavigation" href="#heroSection">BHROMAON</a></div>
+                </div>
+                <nav class="col-lg-6 col-md-8">
+                    <div class="menuNavigation">
+                        <div class="elementMenuNavigation"><a class="linkElementMenu" href="#WhyChooseUs">Who We Are</a></div>
+                        <div class="elementMenuNavigation"><a class="linkElementMenu" href="#WhatWeDo">What We Do</a></div>
+                        <div class="elementMenuNavigation"><a class="linkElementMenu" href="#travelWithUs">Travel With Us</a></div>
+                        <div class="elementMenuNavigation"><a class="linkElementMenu" href="#ContactUs">Contact Us</a></div>
                     </div>
-                    <div class="elementMenuNavigation"><a class="linkElementMenu" href="#WhatWeDo">What We Do</a></div>
-                    <div class="elementMenuNavigation"><a class="linkElementMenu" href="#travelWithUs">Travel With
-                        Us</a>
-                    </div>
-                    <div class="elementMenuNavigation"><a class="linkElementMenu" href="#ContactUs">Contact Us</a></div>
                 </nav>
-                <div class="top_nav col-12">
+                <div class="top_nav col-sm-12 col-12">
                     <div id="myNav" class="overlay">
                         <a href="javascript:void(0)" class="close_button" onclick="closeNav()"><i class="fas fa-times"></i></a>
                         <div class="overlay-content">
@@ -93,26 +100,30 @@
 </header>
 <main class="mainTravel">
     <section class="whyChooseUs" id="WhyChooseUs">
-        <div class="container containerWhyChooseUs">
-            <div class="row fixWhyChooseUs">
-                <div class="col-lg-6 leftBlockWhyChooseUs">
-                    <div class="col-lg-7 titleWhyChooseUs">Why Choose Us</div>
-                    <div class="col-lg-12 descriptionWhyChooseUs">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-6 col-sm-11 col-11 textWhyChooseUs">
+                    <div class="titleWhyChooseUs">Why Choose Us</div>
+                    <div class="descriptionWhyChooseUs">
                         <div class="textDescription">Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee </div>
                         <div class="textDescription">Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that.</div>
                     </div>
-                    <div class="col-lg-6 buttonWhyChooseUs">
-                        <a class="linkButtonWhyChooseUs" href="#">Explore Places</a>
+                    <div class="row no-gutters positionButtonWhyChooseUs">
+                        <div class="col-lg-5 col-md-6 col-sm-5 col-5 buttonWhyChooseUs">
+                            <a class="linkButtonWhyChooseUs" href="#">Explore Places</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 galleryWhyChooseUs">
-                    <div class="row">
-                        <div class="col-lg-12 d-flex flex-row justify-content-start imageGalleryWhyChooseUsFirst"><img src="img/whychooseus_img_1.png"
-                                                                                         alt="House by the river"></div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 galleryWhyChooseUs">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-md-10 col-sm-9 col-9">
+                            <div class="imageGalleryWhyChooseUsFirst"></div>
+                        </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-12 d-flex flex-row justify-content-end imageGalleryWhyChooseUsSecond"><img src="img/whychooseus_img_2.png"
-                                                                                        alt="Mountains"></div>
+                    <div class="row justify-content-center">
+                        <div class="offset-lg-4 col-lg-8 offset-md-2 col-md-10 col-sm-9 col-9">
+                            <div class="imageGalleryWhyChooseUsSecond"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -120,8 +131,8 @@
     </section>
     <section class="whatWeDo" id="WhatWeDo">
         <div class="container containerWhatWeDo">
-            <div class="row align-self-center allBlock">
-                <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center leftBlockWhatWeDo">
+            <div class="row allBlock">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12 d-flex flex-column justify-content-center align-items-center leftBlockWhatWeDo">
                     <div class="backgroundIcon d-flex flex-column justify-content-center align-items-center">
                         <div class="iconWhatWeDo">
                             <?xml version="1.0" encoding="utf-8"?>
@@ -139,7 +150,8 @@
                     </div>
                     <div class="textWhatWeDo">Search Places</div>
                 </div>
-                <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center centerBlockWhatWeDo">
+                <div class="border_dugi_1"></div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12 d-flex flex-column justify-content-center align-items-center centerBlockWhatWeDo">
                     <div class="backgroundIcon d-flex flex-column justify-content-center align-items-center">
                         <div class="iconWhatWeDo">
                             <?xml version="1.0" encoding="utf-8"?>
@@ -159,7 +171,8 @@
                     </div>
                     <div class="textWhatWeDo">Select Places</div>
                 </div>
-                <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center rightBlockWhatWeDo">
+                <div class="border_dugi_2"></div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12 d-flex flex-column justify-content-center align-items-center rightBlockWhatWeDo">
                     <div class="backgroundIcon d-flex flex-column justify-content-center align-items-center">
                         <div class="iconWhatWeDo">
                             <?xml version="1.0" encoding="utf-8"?>
@@ -182,49 +195,62 @@
     </section>
     <section class="informationBlockOne" id="travelWithUs">
         <div class="container containerInformationBlockOne">
-            <div class="row">
-                <div class="col-lg-6 blockInformationOne">
+            <div class="row no-gutters">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 blockInformationOne">
                     <div class="titleBlockInformationOne">Spain</div>
                     <div class="titleTwoBlockInformationOne">Grand Spain Madrid</div>
                     <div class="descriptionBlockInformationOne">But I must explain to you how all this mistaken idea of
                         account to denouncing pleasure and praising pain was account born and I account will give you a
                         complete account of the system
                     </div>
-                    <div class="buttonBlockInformationOne"><a  class="link" href="#">Book Now</a></div>
+                    <div class="row no-gutters positionButtonBlockInformationOne">
+                        <div class="col-lg-5 col-md-6 col-sm-5 col-5 buttonBlockInformationOne">
+                            <a class="link" href="#">Book Now</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="informationBlockTwo">
         <div class="container containerInformationBlockTwo">
-            <div class="row">
-                <div class="offset-lg-6 col-lg-6 blockInformationTwo">
+            <div class="row no-gutters">
+                <div class="offset-lg-6 col-lg-6 offset-md-6 col-md-6 col-sm-12 col-12 blockInformationTwo">
                     <div class="titleBlockInformationTwo">Spain</div>
                     <div class="titleTwoBlockInformationTwo">Grand Spain Madrid</div>
                     <div class="descriptionBlockInformationTwo">But I must explain to you how all this mistaken idea of
                         account to denouncing pleasure and praising pain was account born and I account will give you a
                         complete account of the system
                     </div>
-                    <div class="buttonBlockInformationTwo"><a class="link" href="#">Book Now</a></div>
+                    <div class="row no-gutters positionButtonBlockInformationTwo">
+                        <div class="col-lg-5 col-md-6 col-sm-5 col-5 buttonBlockInformationTwo">
+                            <a class="link" href="#">Book Now</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="whatOurTouristSay" id="WhatOurTouristSay">
         <div class="container containerWhatOurTouristSay">
-                <div class="titleWhatOurTouristSay">What Our Tourist Say</div>
-                <div class="commentWhatOurTouristSay">
-                    <div class="imageWhatOurTouristSay"><img src="img/sam_sumon.png" alt="sam_sumon"></div>
-                    <div class="textCommentWhatOurTouristSay">
-                        <div class="nameUser">Sam Sumon</div>
-                        <div class="comment"><i class="fas fa-quote-left"></i> But I must explain to you how all this
-                            mistaken idea of account to denouncinpleasure and praising pain But I must explain to you
-                            how
-                            all this mistaken idea of account to nai denouncing pleasure and praising pain was account
-                            born
-                            and I account will give you a complete account of the system was account born and I account
-                            will
-                            give you a nai the complete account of the system
+            <div class="row text-center">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12 titleWhatOurTouristSay">What Our Tourist Say</div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12 commentWhatOurTouristSay">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-am-12 col-12 imageWhatOurTouristSay"></div>
+                        <div class="col-lg-7 col-md-7 col-am-12 col-12 textCommentWhatOurTouristSay">
+                            <div class="nameUser">Sam Sumon</div>
+                            <div class="comment"><i class="fas fa-quote-left"></i> But I must explain to you how all this
+                                mistaken idea of account to denouncinpleasure and praising pain But I must explain to you
+                                how
+                                all this mistaken idea of account to nai denouncing pleasure and praising pain was account
+                                born
+                                and I account will give you a complete account of the system was account born and I account
+                                will
+                                give you a nai the complete account of the system
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -234,14 +260,25 @@
 </main>
 <footer class="footerTravel contactUs" id="ContactUs">
     <div class="container containerContactUs">
-        <div class="titleContactUs">Bhromaon</div>
-        <div class="descriptionContactUs">Safe Travel Anywhere</div>
-        <div class="socialLinkContactUs">
-            <div><a class="socialLink" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></div>
-            <div><a class="socialLink" href="https://twitter.com/?lang=uk" target="_blank"><i class="fab fa-twitter"></i></a></div>
-            <div><a class="socialLink" href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></div>
-            <div><a class="socialLink" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a></div>
-            <div><a class="socialLink" href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest"></i></a></div>
+        <div class="row text-center">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12 titleContactUs">Bhromaon</div>
+        </div>
+        <div class="row text-center">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12 descriptionContactUs">Safe Travel Anywhere</div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-4 col-sm-5 col-5 socialLinkContactUs">
+                <div><a class="socialLink" href="https://www.facebook.com/" target="_blank"><i
+                        class="fab fa-facebook-f"></i></a></div>
+                <div><a class="socialLink" href="https://twitter.com/?lang=uk" target="_blank"><i
+                        class="fab fa-twitter"></i></a></div>
+                <div><a class="socialLink" href="https://linkedin.com/" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a></div>
+                <div><a class="socialLink" href="https://www.youtube.com/" target="_blank"><i
+                        class="fab fa-youtube"></i></a></div>
+                <div><a class="socialLink" href="https://www.pinterest.com/" target="_blank"><i
+                        class="fab fa-pinterest"></i></a></div>
+            </div>
         </div>
     </div>
 </footer>
